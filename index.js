@@ -1336,7 +1336,7 @@ const {
            haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
                buttons = [{buttonId: `menu`,buttonText:{displayText: `</️MENU`},type:1}]
                 imageMsg = (await xeon.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-                buttonsMessage = {footerText:'Xeon', imageMessage: imageMsg,
+                buttonsMessage = {footerText:'By Nischal', imageMessage: imageMsg,
                 contentText:`${anuu}`,buttons,headerType:4}
                 prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
                 xeon.relayWAMessage(prep)
@@ -1389,7 +1389,7 @@ const {
                  break
   
           case 'allmenu':
-          case 'xeon':
+          case 'By Nischal':
   groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
                 privat = xeon.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
                 ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1994,7 +1994,7 @@ const {
   for (let i of nomorowner1) {
   const vname = xeon.contacts[i] != undefined ? xeon.contacts[i].vname || xeon.contacts[i].notify : undefined
   ini_list.push({
-  "displayName": 'Xeon',
+  "displayName": 'By Nischal',
   "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xeon.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
   })
   }
@@ -3924,7 +3924,7 @@ const {
                   await sleep(1000)
                   xeon.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
   case 'mygithub':
-    reply('https://github.com/DGXeon')
+    reply('Not Available Yet!')
                       break;
      case 'ss':
         reply(mess.wait)
