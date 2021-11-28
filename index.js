@@ -1623,7 +1623,7 @@ const {
   case 'credit':
      dtod = '918919822103'
      dtod1 = '918919822103'
-     dtod2 = '919774340154'
+     dtod2 = '918919822103'
      dtod3 = ''
      dtod4 ='0'
      var yez = `
