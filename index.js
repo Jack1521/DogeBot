@@ -1264,26 +1264,26 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
       }
     }
     //auto voice note by xeon
-    for (let anju of vien){
-                if (budy === anju){
-                    result = fs.readFileSync(`./media/vn/${anju}.mp3`)
-                    xeon.sendMessage(from, result, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
-                    }
-            }
-            //auto sticker
-            for (let anji of setik){
-                if (budy === anji){
-                    result = fs.readFileSync(`./media/sticker/${anji}.webp`)
-                    xeon.sendMessage(from, result, sticker, { quoted: mek})
-                    }
-            }
-            //auto image
-            for (let anjh of imagi){
-                if (budy === anjh){
-                    result = fs.readFileSync(`./media/image/${anjh}.jpg`)
-                    xeon.sendMessage(from, result, image, { quoted: mek})
-                    }
-            }
+//     for (let anju of vien){
+//                 if (budy === anju){
+//                     result = fs.readFileSync(`./media/vn/${anju}.mp3`)
+//                     xeon.sendMessage(from, result, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
+//                     }
+//             }
+//             //auto sticker
+//             for (let anji of setik){
+//                 if (budy === anji){
+//                     result = fs.readFileSync(`./media/sticker/${anji}.webp`)
+//                     xeon.sendMessage(from, result, sticker, { quoted: mek})
+//                     }
+//             }
+//             //auto image
+//             for (let anjh of imagi){
+//                 if (budy === anjh){
+//                     result = fs.readFileSync(`./media/image/${anjh}.jpg`)
+//                     xeon.sendMessage(from, result, image, { quoted: mek})
+//                     }
+//             }
             // auto text 
             for (var i = 0; i < commandsDB.length ; i++) {
                 if (budy.toLowerCase() === commandsDB[i].pesan) {
