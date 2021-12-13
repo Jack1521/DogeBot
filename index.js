@@ -1324,15 +1324,18 @@ const serialUser = createSerial(18)
             _registered.push(sender)
             fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
             addRegisteredUser(sender, serialUser)
-             const anuu = `「 *USER REGISTRATION* 」
-*Thank you for registering in the 𝐉𝐚𝐜𝐤 𝐁𝐨𝐭 Database*
+             const anuu = ` ┏━━━━•❅•°•❈•°•❅•━━━━┓
+    *USER REGISTRATION*
+ ┗━━━━•❅•°•❈•°•❅•━━━━┛
+ * Thanks For Registration*
 
-*☂︎ Name :* ${pushname}
-*☂︎ API :* +${sender.split('@')[0]}
-*☂︎ Serial:* ${serialUser}
-*☂ ︎Total:* ${_registered.length} User
+ * ♛Owner: wa.me/989035024059 ♛*
+
+ * ♔ Whatsapp Group: https://chat.whatsapp.com/Ih78PSfbxhn6hIS2D09S5S ♔*
+
 
 *「 𝐉𝐚𝐜𝐤 𝐁𝐨𝐭 」*`
+｡☆✼★━━━━━━━━━━━━★✼☆｡`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `</️MENU`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
@@ -1360,8 +1363,18 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE #allmenu`
+       txtt =`Hi ${pushname} 👋\n\n┏━━━━•❅•°•❈•°•❅•━━━━┓ 
+  🎀  𝑀𝓎 𝓈𝑒𝓁𝒻 𝒿𝒶𝒸𝓀  🎀
+┗━━━━•❅•°•❈•°•❅•━━━━┛
 
+👨‍🦱my whatsapp ➼ wa.me/989035024059
+
+❤️🔥My Favourite Anime ➼ Demon Slayer⚡🎋
+
+💟my group ➼ https://chat.whatsapp.com/Ih78PSfbxhn6hIS2D09S5S
+
+🖤 Mizuki Support group➼ https://chat.whatsapp.com/HKBqzwhixq6AwbOAWefioF
+     
                buttons = [{buttonId:`allmenu`, 
                buttonText:{displayText: 'MENU🐶'},type:1},
                {buttonId:`owner`,buttonText:{displayText:'CREATOR🐶'},type:1},
@@ -1612,10 +1625,10 @@ ${readmore}
 > ⬡ ${prefix}neko
 > ⬡ ${prefix}trapnime
 
-𝗡𝗼𝘁𝗲 : Horny = Bonks💥
-Just Learn to Make Bots 🐶
+𝗡𝗼𝘁𝗲 : Call = Block👋
+Refrain from pming the bot 🐶
  
-𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
+𝙀𝙣𝙟𝙤𝙮 𝙏𝙝𝙚 𝘽𝙤𝙩⚡
 `
 sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`credit`,buttonText:{displayText:'THANKS TO'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
@@ -2785,7 +2798,7 @@ break
      memek2 = ct.split("|")[1];
      anu = await fetchJson(`https://rest-api-megumin1.herokuapp.com/api/textmaker/game?text=${memek1}&text2=${memek2}&theme=pubg&apikey=beta`)
      buffer = await getBuffer(anu.result.url)
-     xeon.sendMessage(from, buffer, image, {quoted: mek, caption: 'Here'})
+     xeon.sendMessage(from, buffer, image, {quoted: mek, caption: 'Tanoshime:3'})
      break
              case "bc":  
         case "bcimage":  
